@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		D45944F2233643C900F680F9 /* AtomicDesignSample.h in Headers */ = {isa = PBXBuildFile; fileRef = D45944F0233643C900F680F9 /* AtomicDesignSample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D45944FC2336443900F680F9 /* SampleButtonsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D45944FB2336443900F680F9 /* SampleButtonsView.xib */; };
+		D4958C212338E6F1004EA55D /* Sample.stencil in Resources */ = {isa = PBXBuildFile; fileRef = D4958C202338E6F1004EA55D /* Sample.stencil */; };
+		D4958C242338E8BC004EA55D /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4958C232338E8BC004EA55D /* Sample.swift */; };
+		D4958C262338EFD1004EA55D /* InlineSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4958C252338EFD1004EA55D /* InlineSample.swift */; };
+		D4958C28233A11EB004EA55D /* SampleButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4958C27233A11EB004EA55D /* SampleButtonsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D45944ED233643C900F680F9 /* AtomicDesignSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AtomicDesignSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D45944F0233643C900F680F9 /* AtomicDesignSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AtomicDesignSample.h; sourceTree = "<group>"; };
 		D45944F1233643C900F680F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D45944FB2336443900F680F9 /* SampleButtonsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleButtonsView.xib; sourceTree = "<group>"; };
+		D4958C202338E6F1004EA55D /* Sample.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = Sample.stencil; sourceTree = "<group>"; };
+		D4958C232338E8BC004EA55D /* Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
+		D4958C252338EFD1004EA55D /* InlineSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineSample.swift; sourceTree = "<group>"; };
+		D4958C27233A11EB004EA55D /* SampleButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleButtonsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +56,31 @@
 		D45944EF233643C900F680F9 /* AtomicDesignSample */ = {
 			isa = PBXGroup;
 			children = (
+				D4958C222338E86C004EA55D /* Generated */,
+				D45944F8233643EF00F680F9 /* Molecules */,
 				D45944F0233643C900F680F9 /* AtomicDesignSample.h */,
 				D45944F1233643C900F680F9 /* Info.plist */,
+				D4958C202338E6F1004EA55D /* Sample.stencil */,
 			);
 			path = AtomicDesignSample;
+			sourceTree = "<group>";
+		};
+		D45944F8233643EF00F680F9 /* Molecules */ = {
+			isa = PBXGroup;
+			children = (
+				D4958C27233A11EB004EA55D /* SampleButtonsView.swift */,
+				D45944FB2336443900F680F9 /* SampleButtonsView.xib */,
+				D4958C252338EFD1004EA55D /* InlineSample.swift */,
+			);
+			path = Molecules;
+			sourceTree = "<group>";
+		};
+		D4958C222338E86C004EA55D /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				D4958C232338E8BC004EA55D /* Sample.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +126,7 @@
 				TargetAttributes = {
 					D45944EC233643C900F680F9 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -120,6 +152,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4958C212338E6F1004EA55D /* Sample.stencil in Resources */,
+				D45944FC2336443900F680F9 /* SampleButtonsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4958C242338E8BC004EA55D /* Sample.swift in Sources */,
+				D4958C262338EFD1004EA55D /* InlineSample.swift in Sources */,
+				D4958C28233A11EB004EA55D /* SampleButtonsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +298,7 @@
 		D45944F6233643C900F680F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.46kuro.AtomicDesignSample;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +325,7 @@
 		D45944F7233643C900F680F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

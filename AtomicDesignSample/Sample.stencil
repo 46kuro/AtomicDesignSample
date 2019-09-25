@@ -1,0 +1,18 @@
+{% for type in types.classes %}
+// sourcery:inline:{{ type.name }}.TemplateName
+{% for variable in type.instanceVariables where variable.typeName.name == "String" %}
+@IBOutlet private var {{ variable.name }}Label: UILabel!
+{% endfor %}
+
+{% for variable in type.instanceVariables where variable.typeName.name == "String" %}
+public var {{ variable.name }}: String {
+    get {
+        {{ variable.name }}Label.text
+    }
+    set {
+        {{ variable.name }}Label.text = newValue 
+    }
+} 
+{% endfor %}
+// sourcery:end
+{% endfor %}
