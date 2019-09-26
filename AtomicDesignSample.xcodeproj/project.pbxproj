@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		D45944F2233643C900F680F9 /* AtomicDesignSample.h in Headers */ = {isa = PBXBuildFile; fileRef = D45944F0233643C900F680F9 /* AtomicDesignSample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D45944FC2336443900F680F9 /* SampleButtonsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D45944FB2336443900F680F9 /* SampleButtonsView.xib */; };
-		D4958C212338E6F1004EA55D /* Sample.stencil in Resources */ = {isa = PBXBuildFile; fileRef = D4958C202338E6F1004EA55D /* Sample.stencil */; };
-		D4958C242338E8BC004EA55D /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4958C232338E8BC004EA55D /* Sample.swift */; };
-		D4958C262338EFD1004EA55D /* InlineSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4958C252338EFD1004EA55D /* InlineSample.swift */; };
 		D4958C28233A11EB004EA55D /* SampleButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4958C27233A11EB004EA55D /* SampleButtonsView.swift */; };
+		D4958C2C233C5F43004EA55D /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = D4958C2B233C5F43004EA55D /* Gemfile */; };
+		D4958C2E233C5F4A004EA55D /* Rambafile in Resources */ = {isa = PBXBuildFile; fileRef = D4958C2D233C5F4A004EA55D /* Rambafile */; };
+		D4958C42233C64FF004EA55D /* service.xib.liquid in Resources */ = {isa = PBXBuildFile; fileRef = D4958C40233C64FF004EA55D /* service.xib.liquid */; };
+		D4958C43233C64FF004EA55D /* service.swift.liquid in Resources */ = {isa = PBXBuildFile; fileRef = D4958C41233C64FF004EA55D /* service.swift.liquid */; };
+		D4958C4D233C6EC3004EA55D /* CreateTemplate.sh in Resources */ = {isa = PBXBuildFile; fileRef = D4958C4C233C6EC3004EA55D /* CreateTemplate.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +22,14 @@
 		D45944F0233643C900F680F9 /* AtomicDesignSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AtomicDesignSample.h; sourceTree = "<group>"; };
 		D45944F1233643C900F680F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D45944FB2336443900F680F9 /* SampleButtonsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleButtonsView.xib; sourceTree = "<group>"; };
-		D4958C202338E6F1004EA55D /* Sample.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = Sample.stencil; sourceTree = "<group>"; };
-		D4958C232338E8BC004EA55D /* Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
-		D4958C252338EFD1004EA55D /* InlineSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineSample.swift; sourceTree = "<group>"; };
 		D4958C27233A11EB004EA55D /* SampleButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleButtonsView.swift; sourceTree = "<group>"; };
-		D4958C29233BAF23004EA55D /* CreateTemplate.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = CreateTemplate.sh; sourceTree = "<group>"; };
+		D4958C2B233C5F43004EA55D /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = SOURCE_ROOT; };
+		D4958C2D233C5F4A004EA55D /* Rambafile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rambafile; sourceTree = SOURCE_ROOT; };
+		D4958C37233C6489004EA55D /* Molecules.rambaspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Molecules.rambaspec; sourceTree = "<group>"; };
+		D4958C40233C64FF004EA55D /* service.xib.liquid */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = service.xib.liquid; sourceTree = "<group>"; };
+		D4958C41233C64FF004EA55D /* service.swift.liquid */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = service.swift.liquid; sourceTree = "<group>"; };
+		D4958C4A233C69FB004EA55D /* Molecules.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Molecules.stencil; sourceTree = "<group>"; };
+		D4958C4C233C6EC3004EA55D /* CreateTemplate.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = CreateTemplate.sh; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +62,10 @@
 		D45944EF233643C900F680F9 /* AtomicDesignSample */ = {
 			isa = PBXGroup;
 			children = (
-				D4958C222338E86C004EA55D /* Generated */,
+				D4958C2A233C5E05004EA55D /* Resources */,
 				D45944F8233643EF00F680F9 /* Molecules */,
 				D45944F0233643C900F680F9 /* AtomicDesignSample.h */,
 				D45944F1233643C900F680F9 /* Info.plist */,
-				D4958C202338E6F1004EA55D /* Sample.stencil */,
-				D4958C29233BAF23004EA55D /* CreateTemplate.sh */,
 			);
 			path = AtomicDesignSample;
 			sourceTree = "<group>";
@@ -72,17 +75,38 @@
 			children = (
 				D4958C27233A11EB004EA55D /* SampleButtonsView.swift */,
 				D45944FB2336443900F680F9 /* SampleButtonsView.xib */,
-				D4958C252338EFD1004EA55D /* InlineSample.swift */,
 			);
 			path = Molecules;
 			sourceTree = "<group>";
 		};
-		D4958C222338E86C004EA55D /* Generated */ = {
+		D4958C2A233C5E05004EA55D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D4958C232338E8BC004EA55D /* Sample.swift */,
+				D4958C4C233C6EC3004EA55D /* CreateTemplate.sh */,
+				D4958C2F233C6489004EA55D /* Molecules */,
+				D4958C2D233C5F4A004EA55D /* Rambafile */,
+				D4958C2B233C5F43004EA55D /* Gemfile */,
+				D4958C4A233C69FB004EA55D /* Molecules.stencil */,
 			);
-			path = Generated;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D4958C2F233C6489004EA55D /* Molecules */ = {
+			isa = PBXGroup;
+			children = (
+				D4958C33233C6489004EA55D /* Code */,
+				D4958C37233C6489004EA55D /* Molecules.rambaspec */,
+			);
+			path = Molecules;
+			sourceTree = SOURCE_ROOT;
+		};
+		D4958C33233C6489004EA55D /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				D4958C41233C64FF004EA55D /* service.swift.liquid */,
+				D4958C40233C64FF004EA55D /* service.xib.liquid */,
+			);
+			path = Code;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +178,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4958C212338E6F1004EA55D /* Sample.stencil in Resources */,
+				D4958C43233C64FF004EA55D /* service.swift.liquid in Resources */,
+				D4958C2E233C5F4A004EA55D /* Rambafile in Resources */,
+				D4958C4D233C6EC3004EA55D /* CreateTemplate.sh in Resources */,
+				D4958C42233C64FF004EA55D /* service.xib.liquid in Resources */,
+				D4958C2C233C5F43004EA55D /* Gemfile in Resources */,
 				D45944FC2336443900F680F9 /* SampleButtonsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,8 +194,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4958C242338E8BC004EA55D /* Sample.swift in Sources */,
-				D4958C262338EFD1004EA55D /* InlineSample.swift in Sources */,
 				D4958C28233A11EB004EA55D /* SampleButtonsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

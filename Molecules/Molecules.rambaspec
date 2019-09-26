@@ -1,0 +1,14 @@
+# Template information section
+name: Molecules
+summary: This template is to create molecule view
+author: Shinji Kurosawa
+version: 1.0.0
+license: MIT
+
+# The declarations for code files
+code_files:
+- {name: View.swift, path: Code/service.swift.liquid}
+- {name: View.xib, path: Code/service.xib.liquid}
+
+# Template dependencies
+dependencies:
