@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DA98C9C7F09D3DE46637ED3 /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A25C2B296319A62816F763 /* SampleView.swift */; };
+		A8917C8B245406EB9F86F2DA /* SampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 558A75012B228C0F46190D8D /* SampleView.xib */; };
 		D45944F2233643C900F680F9 /* AtomicDesignSample.h in Headers */ = {isa = PBXBuildFile; fileRef = D45944F0233643C900F680F9 /* AtomicDesignSample.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D45944FC2336443900F680F9 /* SampleButtonsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D45944FB2336443900F680F9 /* SampleButtonsView.xib */; };
-		D4958C28233A11EB004EA55D /* SampleButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4958C27233A11EB004EA55D /* SampleButtonsView.swift */; };
 		D4958C2C233C5F43004EA55D /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = D4958C2B233C5F43004EA55D /* Gemfile */; };
 		D4958C2E233C5F4A004EA55D /* Rambafile in Resources */ = {isa = PBXBuildFile; fileRef = D4958C2D233C5F4A004EA55D /* Rambafile */; };
 		D4958C42233C64FF004EA55D /* service.xib.liquid in Resources */ = {isa = PBXBuildFile; fileRef = D4958C40233C64FF004EA55D /* service.xib.liquid */; };
@@ -18,11 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		558A75012B228C0F46190D8D /* SampleView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SampleView.xib; sourceTree = "<group>"; };
+		C2A25C2B296319A62816F763 /* SampleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 		D45944ED233643C900F680F9 /* AtomicDesignSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AtomicDesignSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D45944F0233643C900F680F9 /* AtomicDesignSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AtomicDesignSample.h; sourceTree = "<group>"; };
 		D45944F1233643C900F680F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D45944FB2336443900F680F9 /* SampleButtonsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleButtonsView.xib; sourceTree = "<group>"; };
-		D4958C27233A11EB004EA55D /* SampleButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleButtonsView.swift; sourceTree = "<group>"; };
 		D4958C2B233C5F43004EA55D /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = SOURCE_ROOT; };
 		D4958C2D233C5F4A004EA55D /* Rambafile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rambafile; sourceTree = SOURCE_ROOT; };
 		D4958C37233C6489004EA55D /* Molecules.rambaspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Molecules.rambaspec; sourceTree = "<group>"; };
@@ -43,6 +43,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C58DC2823EDE055C0137668B /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				C2A25C2B296319A62816F763 /* SampleView.swift */,
+				558A75012B228C0F46190D8D /* SampleView.xib */,
+			);
+			name = Sample;
+			path = Sample;
+			sourceTree = "<group>";
+		};
 		D45944E3233643C900F680F9 = {
 			isa = PBXGroup;
 			children = (
@@ -73,8 +83,7 @@
 		D45944F8233643EF00F680F9 /* Molecules */ = {
 			isa = PBXGroup;
 			children = (
-				D4958C27233A11EB004EA55D /* SampleButtonsView.swift */,
-				D45944FB2336443900F680F9 /* SampleButtonsView.xib */,
+				C58DC2823EDE055C0137668B /* Sample */,
 			);
 			path = Molecules;
 			sourceTree = "<group>";
@@ -183,7 +192,7 @@
 				D4958C4D233C6EC3004EA55D /* CreateTemplate.sh in Resources */,
 				D4958C42233C64FF004EA55D /* service.xib.liquid in Resources */,
 				D4958C2C233C5F43004EA55D /* Gemfile in Resources */,
-				D45944FC2336443900F680F9 /* SampleButtonsView.xib in Resources */,
+				A8917C8B245406EB9F86F2DA /* SampleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4958C28233A11EB004EA55D /* SampleButtonsView.swift in Sources */,
+				4DA98C9C7F09D3DE46637ED3 /* SampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

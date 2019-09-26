@@ -15,14 +15,12 @@ case $OPT in
 esac
 done
 
-echo $MOLECULE_NAME
-echo $PARAMETERS
-# TODO: GenerambaでTemplate作成
-#bundle exec generamba template install
-#bundle exec generamba gen Sample2 Molecules # TODO: Nameを外から受け取る
+bundle exec generamba template install
+bundle exec generamba gen $MOLECULE_NAME Molecules
 
-# TODO: 仮定義用の変数名をclass内に定義
+sourcery --sources AtomicDesignSample/Molecules/${MOLECULE_NAME}/${MOLECULE_NAME}View.swift \
+--templates AtomicDesignSample/Resources/Molecules.stencil \
+--output AtomicDesignSample/Molecules/${MOLECULE_NAME}/${MOLECULE_NAME}View.swift \
+--args ${PARAMETERS}
 
-# TODO: sourcery --sources Molecules/SampleButtonsView.swift --templates Sample.stencil --output Molecules/SampleButtonsView.swift
-
-# TODO: 仮定義用の変数名を削除
+sed -i '' -e '/sourcery:/d' AtomicDesignSample/Molecules/${MOLECULE_NAME}/${MOLECULE_NAME}View.swift
